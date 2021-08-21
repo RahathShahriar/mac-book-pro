@@ -36,10 +36,15 @@
                         <p class="fw-bold">Memory</p>
                         <div class="d-flex">
                             <div class="me-1">
-                                <div class="border border-dark rounded p-2 border bg-light">8Gb unified memory</div>
+                                <button id="memory-1" class="border border-dark rounded p-2 border feature-button">
+                                    8Gb unified memory
+                                </button>
                             </div>
                             <div class="ms-1">
-                                <div class="border border-dark rounded p-2 border bg-light">16Gb unified memory</div>
+                                <button id="memory-2" class="border border-dark rounded p-2 border feature-button">16Gb
+                                    unified
+                                    memory
+                                </button>
                             </div>
 
 
@@ -53,13 +58,16 @@
                         <p class="fw-bold">Storage</p>
                         <div class="d-flex">
                             <div class="me-1">
-                                <div class="border border-dark rounded p-2 border bg-light">256GB SSD Storage</div>
+                                <button id="storage-1" class="border border-dark rounded p-2 border feature-button">256GB SSD
+                                    Storage</button>
                             </div>
                             <div class="mx-1">
-                                <div class="border border-dark rounded p-2 border bg-light">512GB SSD Storage</div>
+                                <button id="storage-2" class="border border-dark rounded p-2 border feature-button">512GB SSD
+                                    Storage</button>
                             </div>
                             <div class="ms-1">
-                                <div class="border border-dark rounded p-2 border bg-light">1TB SSD Storage</div>
+                                <button id="storage-3" class="border border-dark rounded p-2 border  feature-button">1TB SSD Storage
+                                </button>
                             </div>
 
 
@@ -73,12 +81,16 @@
                         <p class="fw-bold">Choose your delivery option</p>
                         <div class="d-flex">
                             <div class="me-1">
-                                <div class="border border-dark rounded p-1 border bg-light">Friday,Aug 25 FREE Prime
-                                    Delivery</div>
+                                <button id="delivery-1" class="border border-dark rounded p-1 border  feature-button">Friday,Aug 25 FREE
+                                    Prime
+                                    Delivery
+                                </button>
                             </div>
                             <div class="ms-1">
-                                <div class=" border border-dark rounded p-1 border bg-light">Friday,Aug 21 Delivery
-                                    charge $20</div>
+                                <button id="delivery-2" class=" border border-dark rounded p-1 border  feature-button">Friday,Aug 21
+                                    Delivery
+                                    charge $20
+                                </button>
                             </div>
 
 
@@ -92,26 +104,26 @@
                             <tbody>
                                 <tr>
                                     <th scope="row">Best Price</th>
-                                    <td class="fw-bold">$1299</td>
+                                    <td class="fw-bold">$<span id="best-price">1299</span></td>
                                 </tr>
                                 <tr>
                                     <th scope="row">Extra Memory Cost</th>
-                                    <td class="fw-bold">$0</td>
+                                    <td class="fw-bold">$<span id="extraMemory">0</span> </td>
                                 </tr>
                                 <tr>
                                     <th scope="row">Extra Storage Cost</th>
-                                    <td class="fw-bold">$0</td>
+                                    <td class="fw-bold">$<span id="extraStorage">0</span> </td>
                                 </tr>
                                 <tr>
                                     <th scope="row">Delivery</th>
-                                    <td class="fw-bold">$0</td>
+                                    <td class="fw-bold">$<span id="delivery-charge">0</span> </td>
                                 </tr>
-                                <tfoot>
-                                    <tr>
-                                        <th scope="row">Total Price</th>
-                                        <td class="fw-bold">$1299</td>
-                                    </tr>
-                                </tfoot>
+                            <tfoot>
+                                <tr>
+                                    <th scope="row">Total Price</th>
+                                    <td class="fw-bold">$<span id="total-price" >1299</span> </td>
+                                </tr>
+                            </tfoot>
 
 
                             </tbody>
@@ -120,12 +132,12 @@
                     <!-- promo code -->
 
                     <div class="mt-5 w-50">
-                       <h6>Add Promo Code</h6> 
+                        <h6>Add Promo Code</h6>
                         <form class="d-flex">
-                          <input class="form-control me-2" >
-                          <button class="btn btn-danger" type="submit">Apply</button>
+                            <input class="form-control me-2">
+                            <button class="btn btn-danger" type="submit">Apply</button>
                         </form>
-                      </div>
+                    </div>
                 </div>
 
 
@@ -133,7 +145,7 @@
 
             <div>
                 <hr>
-                <h2 class="text-center">Total:$1299</h2>
+                <h2 class="text-center">Total:$<span id="final-total">1299</span> </h2>
             </div>
 
 
@@ -144,7 +156,7 @@
     </main>
 
     <!-- javascript -->
-    <script src="js/cart.js"></script>
+    <script src="js/script.js"></script>
     <!-- bootstrap javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
